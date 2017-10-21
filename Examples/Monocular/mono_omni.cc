@@ -38,7 +38,7 @@ void LoadImages(int nTimes, vector<string> &vstrImageFilenames, vector<double> &
 int main(int argc, char **argv)
 {
 	if (argc != 4) {
-		cerr << endl << "Usage: ./mono_omni path_to_vocabulary path_to_settings path_to_sequence number_of_images" << endl;
+		cerr << endl << "Usage: ./mono_omni.exe [1]path_to_vocabulary [2]path_to_settings [3]number_of_images" << endl;
 		return 1;
 	}
 
@@ -60,8 +60,6 @@ int main(int argc, char **argv)
 
 	cout << "Start processing sequence ..." << endl;
 	cout << "Images in the sequence: " << nImages << endl << endl;
-
-	usleep(5.0e+6);
 
 	// Main loop
 	cv::Mat im;
