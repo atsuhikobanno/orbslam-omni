@@ -142,7 +142,7 @@ void LoadImages(int nTimes, vector<string> &vstrImageFilenames, vector<double> &
 	for(int i=0; i<nTimes; i++){
 		stringstream ss;
 		ss << setfill('0') << setw(4) << i;
-		vstrImageFilenames[i] = "D:/Data/Image/IIS/" + ss.str() + ".bmp";
+		vstrImageFilenames[i] = "D:/Data/Image/Data10/img_" + ss.str() + ".bmp";
 
 		vTimestamps[i] = 0.25 * i;
 	}
